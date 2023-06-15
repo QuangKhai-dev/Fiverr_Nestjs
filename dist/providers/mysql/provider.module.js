@@ -20,7 +20,7 @@ MySQLDatabaseProviderModule = __decorate([
                 inject: [config_1.ConfigService],
                 useFactory: async (configService) => ({
                     type: 'mysql',
-                    host: process.env.CLEARDB_DATABASE_URL || 'localhost',
+                    host: process.env.DATABASE_URL || 'localhost',
                     port: 3306,
                     username: 'root',
                     password: '12345678',
